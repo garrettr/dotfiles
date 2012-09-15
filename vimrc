@@ -79,6 +79,7 @@ nnoremap ; :
 " re-hardwrap paragraphs of text
 nnoremap <leader>q gqip
 
+
 " save on losing focus - does this make sense without undofile?
 "au FocusLost * :wa
 
@@ -116,3 +117,6 @@ set nojoinspaces
 " Ctrl-P
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlPMixed'
+
+" Wild matching ignore
+set wildignore+=*.so,*.o,*.pyc
