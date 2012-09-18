@@ -50,8 +50,8 @@ set incsearch
 set showmatch
 set hlsearch
 nnoremap <leader><space> :noh<cr>
-nnoremap <tab> %
-vnoremap <tab> %
+"nnoremap <tab> %
+"vnoremap <tab> %
 
 " long lines
 
@@ -78,7 +78,6 @@ nnoremap ; :
 
 " re-hardwrap paragraphs of text
 nnoremap <leader>q gqip
-
 
 " save on losing focus - does this make sense without undofile?
 "au FocusLost * :wa
