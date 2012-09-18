@@ -23,6 +23,10 @@ color Tomorrow-Night
 highlight OverLength ctermbg=red ctermfg=white guibg=#FF9191
 match OverLength /\%81v.\+/
 
+" clear long line highlighting
+" (useful for SAM, and other text files with long lines)
+nnoremap <leader>h :hi clear OverLength<cr>
+
 " have Vim jump to the last position when reopening a file
 " this is in .gvimrc because it was annoying to have vim jump to the last
 " position in certain files, e.g. git commit messages
