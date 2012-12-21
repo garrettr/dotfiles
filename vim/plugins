@@ -1,0 +1,9 @@
+AutoComplPop    git://github.com/vim-scripts/AutoComplPop.git
+ctrlp           git://github.com/kien/ctrlp.vim.git
+fugitive        git://github.com/tpope/vim-fugitive.git
+nerdtree        git://github.com/scrooloose/nerdtree.git
+Pydiction       git://github.com/vim-scripts/Pydiction.git
+scratch         git://github.com/vim-scripts/scratch.vim.git
+tomorrow-theme  git://github.com/chriskempson/vim-tomorrow-theme.git
+vim-javascript  git://github.com/pangloss/vim-javascript.git
+vim-powerline   git://github.com/Lokaltog/vim-powerline.git
