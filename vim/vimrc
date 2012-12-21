@@ -61,15 +61,6 @@ set formatoptions=qrn1
 "set colorcolumn=80
 
 " do things the Vim Way, make j and k behave as you would expect
-
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 
@@ -119,3 +110,6 @@ let g:ctrlp_cmd = 'CtrlPMixed'
 
 " Wild matching ignore
 set wildignore+=*.so,*.o,*.pyc
+
+" Indentation settings
+"autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
