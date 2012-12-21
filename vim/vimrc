@@ -111,5 +111,5 @@ let g:ctrlp_cmd = 'CtrlPMixed'
 " Wild matching ignore
 set wildignore+=*.so,*.o,*.pyc
 
-" Indentation settings
-"autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
+" Make copy/paste in Terminal vim over SSH work
+set mouse-=a
