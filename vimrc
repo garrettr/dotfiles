@@ -1,10 +1,6 @@
 " Revised thoroughly thanks to http://stevelosh.com/blog/2010/09/coming-home-to-vim/
 
-filetype off
-call pathogen#runtime_append_all_bundles()
-" Load Tim Pope's pathogen
-"call pathogen#infect()
-"call pathogen#helptags()
+call pathogen#infect()
 filetype plugin indent on
 
 set nocompatible " no one uses vi
@@ -93,9 +89,6 @@ map <C-H> <C-W>h
 map <C-J> <C-W>j
 map <C-K> <C-W>k
 map <C-L> <C-W>l
-
-" To disable a plugin, add it's bundle name to the following list
-let g:pathogen_disabled = ['supertab', 'delimitMate']
 
 " Use j/k to navigate autocomplete list (this might suck)
 "inoremap <expr> j ((pumvisible())?("\<C-n>"):("j"))
