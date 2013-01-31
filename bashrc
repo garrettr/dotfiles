@@ -10,9 +10,7 @@ fi
 # Customizations
 
 # Prompt
-export PS1="\[\e[7;32m\]\W \$\[\e[m\] "
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PS1='\[\e[7;32m\]\u@\h:\w [$?]\[\e[m\]\n\$ '
 
 # Generate core dumps
 ulimit -c unlimited
