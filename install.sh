@@ -3,7 +3,7 @@
 # bash
 cp bash_aliases ~/.bash_aliases
 cat bashrc >> ~/.bashrc            # Don't clobber what the distro provides
-. ~/.bashrc
+source ~/.bashrc
 
 # git
 cp gitconfig ~/.gitconfig
