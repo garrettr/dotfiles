@@ -13,5 +13,5 @@ cp screenrc ~/.screenrc
 
 # vim
 cp vimrc ~/.vimrc
-mkdir ~/.vim
+mkdir -p ~/.vim
 cp -r vim/* ~/.vim/
