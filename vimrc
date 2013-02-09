@@ -29,7 +29,13 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
-set relativenumber
+
+if v:version >= 703
+  set relativenumber
+else
+  set number
+endif
+
 "set undofile " creates .un~ files so you can undo/redo even after close
 
 " set the <leader> key
