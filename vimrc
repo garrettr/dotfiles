@@ -58,6 +58,7 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
+"set undofile " creates .un~ files so you can undo/redo even after close
 
 if v:version >= 703
   set relativenumber
@@ -65,13 +66,10 @@ else
   set number
 endif
 
-"set undofile " creates .un~ files so you can undo/redo even after close
-
 " set the <leader> key
 let mapleader = ","
 
 " searching/moving
-
 nnoremap / /\v
 vnoremap / /\v
 set ignorecase
@@ -85,7 +83,6 @@ nnoremap <leader><space> :noh<cr>
 "vnoremap <tab> %
 
 " long lines
-
 set wrap
 set textwidth=79
 set formatoptions=qrn1
