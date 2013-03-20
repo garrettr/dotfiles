@@ -1,9 +1,38 @@
-" Revised thoroughly thanks to http://stevelosh.com/blog/2010/09/coming-home-to-vim/
+" Revised thoroughly thanks to
+" http://stevelosh.com/blog/2010/09/coming-home-to-vim/
+set nocompatible               " be iMproved
+filetype off                   " required!
 
-call pathogen#infect()
-filetype plugin indent on
+" Vundle: https://github.com/gmarik/vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+" let Vundle manage Vundle
+" required!
+Bundle 'gmarik/vundle'
 
-set nocompatible " no one uses vi
+" My Bundles
+Bundle 'kien/ctrlp.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'Lokaltog/vim-powerline'
+
+" Git
+Bundle 'airblade/vim-gitgutter'
+Bundle 'tpope/vim-fugitive'
+
+"Bundle 'Valloric/YouCompleteMe'
+"doesn't work - YouCompleteMe unavailable: requires Vim 7.3.584+
+"Bundle 'vim-scripts/AutoComplPop'
+
+" Colorschemes
+Bundle 'chriskempson/vim-tomorrow-theme'
+Bundle 'cschlueter/vim-wombat'
+Bundle 'vim-scripts/peaksea'
+Bundle 'tomasr/molokai'
+Bundle 'croaker/mustang-vim'
+Bundle 'nanotech/jellybeans.vim'
+
+filetype plugin indent on     " required!
+syntax on
 
 set modelines=0 " avoid possible security exploits in modelines
 
