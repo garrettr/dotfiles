@@ -137,4 +137,18 @@ let g:ctrlp_cmd = 'CtrlPMixed'
 set wildignore+=*.so,*.o,*.pyc
 
 " Make copy/paste in Terminal vim over SSH work
-set mouse-=a
+" makes gvim suck though
+"set mouse-=a
+
+set t_Co=256
+color jellybeans
+
+" highlight long lines (must be called after loading color scheme)
+highlight OverLength ctermbg=red ctermfg=white guibg=#805454
+"highlight OverLength ctermbg=red ctermfg=white guibg=#5C3C3C
+match OverLength /\%81v.\+/
+
+" Highlight lines > 80 characters long
+" Highlight trailing whitespace
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
