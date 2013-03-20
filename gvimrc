@@ -15,15 +15,15 @@ set guioptions-=m
 
 " set font
 "set guifont=Ubuntu\ Mono\ 11
-set guifont=Inconsolata-g:h12
+"set guifont=Inconsolata-g:h12
 
 " colorscheme
 color Tomorrow-Night
 
 " highlight long lines (must be called after loading color scheme)
-"highlight OverLength ctermbg=red ctermfg=white guibg=#805454
-"highlight OverLength ctermbg=red ctermfg=white guibg=#5C3C3C
-"match OverLength /\%81v.\+/
+highlight OverLength ctermbg=red ctermfg=white guibg=#805454
+highlight OverLength ctermbg=red ctermfg=white guibg=#5C3C3C
+match OverLength /\%81v.\+/
 
 " clear long line highlighting
 " (useful for SAM, and other text files with long lines)
