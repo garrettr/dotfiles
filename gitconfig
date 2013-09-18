@@ -29,3 +29,6 @@
     added = yellow
     changed = green
     untracked = cyan
+
+[credential]
+	helper = cache --timeout=3600
