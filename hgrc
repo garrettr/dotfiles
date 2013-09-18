@@ -1,0 +1,29 @@
+[ui]
+username = Garrett Robinson <grobinson@mozilla.com>
+editor = vim
+merge = internal:merge
+
+[extensions]
+mq =
+color =
+histedit =
+inotify =
+pager =
+progress =
+purge =
+rebase =
+
+[diff]
+git = 1
+showfunc = 1
+unified = 8
+
+[defaults]
+commit = -v
+qnew = -U
+
+[mq]
+plain = True
+
+[paths]
+try = ssh://hg.mozilla.org/try/
