@@ -175,5 +175,5 @@ autocmd BufNewFile,BufRead /home/garrett/code/mozilla-central/* set ts=2 sw=2 et
 au BufNewFile,BufRead *.jsm set filetype=javascript
 au BufNewFile,BufRead *.sjs set filetype=javascript
 
-# modula-2? really?
+" modula-2? really?
 au BufNewFile,BufRead *.md set filetype=markdown
