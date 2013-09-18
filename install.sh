@@ -3,7 +3,7 @@
 # bash
 cp bash_aliases ~/.bash_aliases
 cat bashrc >> ~/.bashrc # don't clobber what the distro provides
-echo "Don't forget to source ~/.bashrc."
+#echo "Don't forget to source ~/.bashrc."
 
 # git
 # install git if it's not installed (need it to clone vundle later)
@@ -31,3 +31,19 @@ vim +BundleInstall +qall
 dpkg -s xfonts-terminus >/dev/null 2>&1 || \
     { echo "xfonts-terminus not installed, running 'sudo apt-get install xfonts-terminus'";
       sudo apt-get install xfonts-terminus; }
+
+# zsh
+command -v zsh >/dev/null 2>&1 || \
+    { echo "zsh not installed, running 'sudo apt-get install zsh'";
+      sudo apt-get install zsh; }
+git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+mkdir -p ~/.oh-my-zsh/custom/plugins
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+cp zshrc ~/.zshrc
+chsh -s /bin/zsh
+
+# final notice to user
+echo
+echo "/////////////////////////////////////////////////////"
+echo "Your shell has been reconfigured! Open a new terminal to experience a subtle new richness and higher standard of living."
+echo "/////////////////////////////////////////////////////"
