@@ -3,8 +3,11 @@
 	email = garrettr@riseup.net
 [alias]
 	co = checkout
+    hgp = show --format=\"From: %an <%ae>%n%s%n%b\" -U8
 [core]
 	editor = vim
+[diff]
+    renames = copy
 
 [color]
     branch = auto
