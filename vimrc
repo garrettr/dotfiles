@@ -20,16 +20,18 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'tpope/vim-fugitive'
 
 "Bundle 'Valloric/YouCompleteMe'
-"doesn't work - YouCompleteMe unavailable: requires Vim 7.3.584+
-"Bundle 'vim-scripts/AutoComplPop'
+"YouCompleteMe requires Vim 7.3.584+ (build from source)
+Bundle 'vim-scripts/AutoComplPop'
+Bundle 'scrooloose/syntastic'
+Bundle 'vim-scripts/taglist.vim'
+Bundle 'majutsushi/tagbar'
+Bundle 'othree/html5.vim'
+Bundle 'pangloss/vim-javascript'
 
 " Colorschemes
 Bundle 'chriskempson/vim-tomorrow-theme'
-Bundle 'cschlueter/vim-wombat'
-Bundle 'vim-scripts/peaksea'
-Bundle 'tomasr/molokai'
-Bundle 'croaker/mustang-vim'
 Bundle 'nanotech/jellybeans.vim'
+Bundle 'w0ng/vim-hybrid'
 
 filetype plugin indent on     " required!
 syntax on
@@ -132,23 +134,46 @@ set nojoinspaces
 " Ctrl-P
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlPMixed'
+"let g:ctrlp_clear_cache_on_exit = 0
 
 " Wild matching ignore
 set wildignore+=*.so,*.o,*.pyc
 
 " Make copy/paste in Terminal vim over SSH work
+" Resize splits with the mouse in terminal vim
 " makes gvim suck though
-"set mouse-=a
+set mouse+=a
 
 set t_Co=256
-color jellybeans
+colorscheme hybrid
 
 " highlight long lines (must be called after loading color scheme)
 highlight OverLength ctermbg=red ctermfg=white guibg=#805454
 "highlight OverLength ctermbg=red ctermfg=white guibg=#5C3C3C
 match OverLength /\%81v.\+/
 
-" Highlight lines > 80 characters long
 " Highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
+nnoremap <leader>gn :GitGutterNextHunk<cr>
+nnoremap <leader>gp :GitGutterPrevHunk<cr>
+
+set splitbelow
+set splitright
+
+" taglist.vim
+let Tlist_WinWidth = 50
+"let Tlist_Use_Right_Window = 1
+map <F4> :TlistToggle<cr>
+
+" Rebuild ctags libs for current working directory
+map <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --exclude="obj-*" .<CR>
+
+" Mozilla
+" vim: set ts=2 sw=2 et tw=78:
+autocmd BufNewFile,BufRead /home/garrett/code/mozilla-central/* set ts=2 sw=2 et tw=78
+au BufNewFile,BufRead *.jsm set filetype=javascript
+au BufNewFile,BufRead *.sjs set filetype=javascript
+
+# modula-2? really?
+au BufNewFile,BufRead *.md set filetype=markdown
