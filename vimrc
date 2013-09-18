@@ -23,8 +23,8 @@ Bundle 'tpope/vim-fugitive'
 "YouCompleteMe requires Vim 7.3.584+ (build from source)
 Bundle 'vim-scripts/AutoComplPop'
 Bundle 'scrooloose/syntastic'
-Bundle 'vim-scripts/taglist.vim'
-Bundle 'majutsushi/tagbar'
+"Bundle 'vim-scripts/taglist.vim'
+"Bundle 'majutsushi/tagbar'
 Bundle 'othree/html5.vim'
 Bundle 'pangloss/vim-javascript'
 
