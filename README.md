@@ -4,39 +4,6 @@ This file contains configuration instructions and notes for various programs.
 
 Use Pathogen for Vim package management.
 
-## Plugins
-
-* AutoComplPop
-* autotag
-* [ctrlp.vim](https://github.com/kien/ctrlp.vim)
-* delimitMate
-* FuzzyFinder
-* L9
-* molokai
-* nerdtree
-* scratch
-* supertab
-* taglist
-* TaskList.vim
-* tomorrow-theme
-* vim-colors-solarized
-* vim-fugitive
-* vim-javascript
-* vim-markdown
-* vimroom
-* vim-surround
-
-I'm not using some of these. Should consolidate.
-
-## Colorschemes
-
-These are my favorite vim color schemes:
-
-* [Tomorrow Theme](git://github.com/chriskempson/tomorrow-theme.git)
-* [jellybeans](https://github.com/nanotech/jellybeans.vim)
-* [xoria256 (customized)](http://oscar.morante.eu/blog/xoria/)
-* [ir_black](https://github.com/wgibbs/vim-irblack)
-
 # inputrc
 
 Although I am making more of an effort to use the built-in (emacs)
