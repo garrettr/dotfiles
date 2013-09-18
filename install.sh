@@ -12,6 +12,12 @@ command -v git > /dev/null 2>&1 || \
       sudo apt-get install git; }
 cp gitconfig ~/.gitconfig
 
+# mercurial
+command -v hg > /dev/null 2>&1 || \
+    { echo "mercurial not installed, running 'sudo apt-get install mercurial'"; \
+      sudo apt-get install mercurial; }
+cp hgrc ~/.hgrc
+
 # screen
 cp screenrc ~/.screenrc
 
