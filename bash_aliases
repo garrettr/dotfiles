@@ -10,3 +10,7 @@ alias la='ls -lA'
 
 # Quick lookup a command flag
 manswitch () { man $1 | less -p "^ +$2"; }
+
+# virtualenv
+alias venv='. env/bin/activate'
+alias denv='deactivate'
