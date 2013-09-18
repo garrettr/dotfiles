@@ -11,6 +11,9 @@ cp gitconfig ~/.gitconfig
 # screen
 cp screenrc ~/.screenrc
 
+# tmux
+cp tmux.conf ~/.tmux.conf
+
 # vim
 cp vimrc ~/.vimrc
 mkdir -p ~/.vim
